@@ -1,18 +1,18 @@
 # Playwright_MCP_Javascript
 
-Automated browser testing suite using **Playwright MCP - Test Generator Agent**.
+Automated browser testing suite using **Playwright MCP - Test Planner, Generator, Healer Agents**.
 
 ## Overview
 
-This project contains end-to-end automated tests for the Swag Labs e-commerce application. Tests are written in TypeScript using Playwright's testing framework and executed in headed mode for visibility during test runs. Refer - https://playwright.dev/docs/test-agents
+This project contains demo for end-to-end automated test case for the Swag Labs e-commerce application. Tests are written in TypeScript using Playwright's testing framework and executed in headed mode for visibility during test runs. Refer - https://playwright.dev/docs/test-agents
 
-**Test Generation**: Tests are automatically generated using the **Playwright MCP - Test Generator Agent**, which records user interactions and generates reliable test code.
+**Test Generation**: Tests are automatically generated using the **Playwright MCP**, which records user interactions and generates reliable test code.
 
-**Self-Healing**: The test suite utilizes **Playwright Self-Healing Agents** to automatically fix broken locators, reducing maintenance overhead and improving test stability.
+**Self-Healing**: The test suite also utilizes **Playwright Self-Healing Agent** to automatically fix broken locators, reducing maintenance overhead and improving test stability.
 
 ## 🤖 Test Generation Workflow
 
-This project uses an **AI-powered test generation workflow** with Playwright agents:
+This project uses an **AI-powered test generation workflow** with Playwright Planner, Generator, Healer agents:
 
 ### How Tests Are Generated
 
@@ -58,7 +58,7 @@ This will install:
 npx playwright install
 ```
 
-3. Initialize Playwright Self-Healing Agents (optional but recommended):
+3. Initialize Playwright Self-Healing Agents:
 ```bash
 npx playwright init-agents --loop=vscode
 ```
