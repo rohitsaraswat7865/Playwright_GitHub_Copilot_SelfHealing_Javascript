@@ -1,4 +1,4 @@
-# TodoMVC Application - Basic Operations Test Plan
+# --Test Plan
 
 ## Test Scenarios
 

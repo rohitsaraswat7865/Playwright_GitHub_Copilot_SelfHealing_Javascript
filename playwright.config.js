@@ -32,11 +32,11 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     
-    /* Add 50ms delay between keystrokes while typing */
-    typeDelay: 50,
+    /* Delay between keystrokes while typing (in milliseconds) */
+    typeDelay: 100,
     
-    /* Slow down Playwright operations by 200ms */
-    slowMo: 200,
+    /* Slow down all operations by this amount (in milliseconds) */
+    slowMo: 500,
   },
 
   /* Configure projects for major browsers */
@@ -45,7 +45,7 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], headless: false },
     },
-
+    /*
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'], headless: false },
@@ -54,7 +54,7 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'], headless: false },
-    },
+    },*/
 
     /* Test against mobile viewports. */
     // {

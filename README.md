@@ -72,16 +72,14 @@ Run all tests:
 npx playwright test
 ```
 
-Run tests in a specific browser:
+Run tests:
 ```bash
-npx playwright test --project=chromium
-npx playwright test --project=firefox
-npx playwright test --project=webkit
+npx playwright test --config=playwright.config.js
 ```
 
 Run a single test file:
 ```bash
-npx playwright test tests/login-and-verify.spec.ts
+npx playwright test tests/login-and-verify.spec.ts --config=playwright.config.js
 ```
 
 Run tests with headed browser (UI visible):
