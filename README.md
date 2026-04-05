@@ -1,6 +1,6 @@
 # Swag Labs Test Suite
 
-Automated browser testing suite for Swag Labs (https://www.saucedemo.com/) using **Playwright**.
+Automated browser testing suite using **Playwright Test Generator Agent**.
 
 ## Overview
 
