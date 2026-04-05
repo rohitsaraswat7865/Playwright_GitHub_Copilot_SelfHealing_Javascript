@@ -11,10 +11,15 @@
 
 **Steps:**
 1. Navigate to https://www.saucedemo.com/
-2. Type Username as "standard_user"
-3. Type Password as "secret_sauce"
+2. Keyboard action -> Type Username as "standard_user" sequentially
+3. Keyboard action -> Type Password as "secret_sauce" sequentially
 4. Click login button
-5. Page loads, Wait until network is idle and url contains substring as inventory
+5. Wait until network is idle
+6. Verify URL contains substring as inventory
+7. Verify page contains text Products element is visible
+8. Verify element text is "Products"
 
 **Expected Results:**
-- page contains text Products and that element is attached to dom
+- URL contains "inventory"
+- Products heading is visible and attached to DOM
+- Products element displays the text "Products"
