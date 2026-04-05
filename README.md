@@ -1,4 +1,4 @@
-# Swag Labs Test Suite
+# Playwright_GitHub_Copilot_SelfHealing_Javascript
 
 Automated browser testing suite using **Playwright Test Generator Agent**.
 
