@@ -4,7 +4,7 @@ Automated browser testing suite using **Playwright MCP - Test Planner, Generator
 
 ## Overview
 
-This project contains demo for end-to-end automated test case for the Swag Labs e-commerce application. Tests are written in TypeScript using Playwright's testing framework and executed in headed mode for visibility during test runs. Refer - https://playwright.dev/docs/test-agents
+This project contains demo for end-to-end automated test case for the Swag Labs e-commerce application. Tests are written using Playwright's testing framework and executed in headed mode for visibility during test runs. Refer - https://playwright.dev/docs/test-agents
 
 **Test Generation**: Tests are automatically generated using the **Playwright MCP**, which records user interactions and generates reliable test code.
 
