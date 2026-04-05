@@ -1,25 +1,32 @@
 // spec: specs/test-plan.md
+// seed: tests/seed.spec.ts
 
 import { test, expect } from '@playwright/test';
 
-test.describe('Adding New Todos', () => {
+test.describe('Login and Verify', () => {
   test('Login and Verify', async ({ page }) => {
-    // 1. Navigate to https://www.saucedemo.com/
+    // Navigate to https://www.saucedemo.com/
     await page.goto('https://www.saucedemo.com/');
 
-    // 2. Enter Username as "standard_user" at locator //input[@placeholder="Username"]
-    await page.locator('[data-test="username"]').fill('standard_user');
+    // Click username field
+    await page.locator('[data-test="username"]').click();
 
-    // 3. Enter Password as "secret_sauce" at locator //input[@placeholder="Password"]
-    await page.locator('[data-test="password"]').fill('secret_sauce');
+    // Type Username as "standard_user" using keyboard
+    await page.locator('[data-test="username"]').pressSequentially('standard_user');
 
-    // 4. Click login button, use locator at locator //input[@type="submit"]
+    // Click password field
+    await page.locator('[data-test="password"]').click();
+
+    // Type Password as "secret_sauce" using keyboard
+    await page.locator('[data-test="password"]').pressSequentially('secret_sauce');
+
+    // Click login button
     await page.locator('[data-test="login-button"]').click();
 
-    // 5. Page loads, Wait until network is idle and url contains substring as inventory
-    await new Promise(f => setTimeout(f, 5 * 1000));
+    // Wait until network is idle and url contains inventory
+    await new Promise(f => setTimeout(f, 2 * 1000));
 
-    // Expected Results: page contains text Products and that element is attached to dom
+    // Page contains text Products and that element is attached to dom
     await expect(page.locator('[data-test="title"]')).toBeVisible();
   });
 });

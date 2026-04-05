@@ -31,6 +31,12 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    
+    /* Add 50ms delay between keystrokes while typing */
+    typeDelay: 50,
+    
+    /* Slow down Playwright operations by 200ms */
+    slowMo: 200,
   },
 
   /* Configure projects for major browsers */

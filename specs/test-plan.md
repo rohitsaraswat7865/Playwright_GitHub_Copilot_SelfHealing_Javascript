@@ -11,8 +11,8 @@
 
 **Steps:**
 1. Navigate to https://www.saucedemo.com/
-2. Enter Username as "standard_user"
-3. Enter Password as "secret_sauce"
+2. Type Username as "standard_user"
+3. Type Password as "secret_sauce"
 4. Click login button
 5. Page loads, Wait until network is idle and url contains substring as inventory
 
